@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using PracticeAPI.Models.DBModels;
+using System.Collections.Generic;
 
 namespace PracticeAPI.CustomModels
 {
@@ -6,5 +7,8 @@ namespace PracticeAPI.CustomModels
     {
         IEnumerable<tblEmployee> getList();
         tblEmployee getById(int id);
+        void addEmployee(Employee newEmployee);
+        bool deleteEmployee(int id);
+        bool updateEmployee(int id,Employee employee);
     }
 }
