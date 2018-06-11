@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <!--<script src="~/Scripts/jquery-1.9.1.min.js"></script>-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ulEmployees = $('#displayDiv');
+            $('#btnCallAPI').click(function () {
+                console.log("Function call succesful");
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://localhost:45890/api/Employees',
+                    dataType: 'jsonp',
+                    succes: function (data) {
+                        console.log("Wakadush");
+                        ulEmployees.empty();
+                        $.each(data, function (index, val) {
+
+                            var fullName = val.FirstName + " " + val.LastName;
+                            ulEmployees.append('<li>'+fullName+'</li>');
+
+                        });
+                    },
+                });
+            });
+            
+
+        });
+
+            
+    </script>
+</head>
+<body>
+    <input id="btnCallAPI" type="submit" value="Get all employees">
+    <ul id="displayDiv">
+
+    </ul>
+</body>
+</html>

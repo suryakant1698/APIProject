@@ -13,10 +13,8 @@ namespace PracticeAPI.Controllers
     [RoutePrefix("api/Employees")]
     public class EmployeesController : ApiController
     {
-
         DB getFactoryInstance;
         IDBOperations getData;
-
         EmployeesController()
         {
             getFactoryInstance = new DB();
@@ -24,8 +22,9 @@ namespace PracticeAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<tblEmployee> Get()
+        public IEnumerable<tblEmployee> Get(string gender="All")
         {
+
             return getData.getList();
         }
 

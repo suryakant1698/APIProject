@@ -88,3 +88,5 @@ c:\users\lenovo\documents\visual studio 2015\Projects\PracticeAPI\PracticeAPI\bi
 c:\users\lenovo\documents\visual studio 2015\Projects\PracticeAPI\PracticeAPI\obj\Debug\PracticeAPI.dll
 c:\users\lenovo\documents\visual studio 2015\Projects\PracticeAPI\PracticeAPI\obj\Debug\PracticeAPI.pdb
 C:\Users\lenovo\Documents\Visual Studio 2015\Projects\PracticeAPI\PracticeAPI\obj\Debug\PracticeAPI.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Documents\Visual Studio 2015\Projects\PracticeAPI\PracticeAPI\bin\WebApiContrib.Formatting.Jsonp.dll
+C:\Users\lenovo\Documents\Visual Studio 2015\Projects\PracticeAPI\PracticeAPI\bin\WebApiContrib.Formatting.Jsonp.pdb
